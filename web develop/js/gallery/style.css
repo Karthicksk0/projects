@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: coral;
+}
+
+.container{
+    min-height: 80vh;
+    width: 50%;
+    border: 8px solid purple;
+    margin: 20% auto;
+    position: relative;
+    box-shadow: 10px 10px 35px rgba(0,0,0,0.6);
+    background: url("imgss/1.jpg") center/cover fixed no-repeat;
+    transition:background 1s ease-in-out;
+
+}
+
+.btn-left{
+    
+    top: 50%;
+    position: absolute;
+    left: -2%;
+    transform: translateY(calc(-50%));
+    background-color: white;
+    padding:.4em .6em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.btn-right{
+    
+    top: 50%;
+    position: absolute;
+    right: -2%;
+    transform: translateY(calc(-50%));
+    background-color: white;
+    padding:.4em .6em;
+    border-radius: 2em;
+    cursor: pointer;
+}

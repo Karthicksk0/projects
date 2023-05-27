@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --red:crimson;
+   --green:#53BF9D;
+   --yellow:#FFC54D;
+   --white:whitesmoke;
+}
+
+.landing{
+    background-image: url(imgs/pexels-eva-bronzini-5734657.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: var(--white);
+    
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    row-gap: 1em;
+}
+
+#logo{
+    flex: 3;
+    min-width: 230px;
+    
+}
+
+nav{
+    display: flex;
+    flex: 2;
+    align-items: center;
+    
+}
+
+nav a{
+    flex: 1;
+    
+}
+
+header a{
+    color: var(--red);
+    font-size: 1.65em;
+    margin: 1.65em;
+    text-decoration: none;
+    min-width: 140px;
+}
+
+header h2 i,nav a i{
+    margin-right: .5em; 
+}
+
+nav :hover{
+    opacity: 0.6;
+
+}
+
+/*   css for main text    */
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    padding: 4em;
+}
+
+.tagline1 {
+    font-size: 3.50em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.tagline2 {
+    font-size: 1.50em;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+button{
+    width: 8vw;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: .75em;
+}
+
+button:hover{
+    color: black;
+    opacity: 0.6;
+}
+
+.maintext div{
+    margin-top: 1em;
+}
+
+/*    css for menu card    */
+
+#menuheading ,#locheading{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    display: flex;
+    justify-content: center;
+    color: var(--yellow);
+    font-size: 3em;
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(235px,1fr));
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    color: var(--white);
+    
+}
+
+.menu th{
+    color:var(--red);
+    font-size: 1.8em;
+}
+
+table{
+    width:100%;
+    padding:1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row: span 2;
+}
+
+/*  css for locations  */
+
+.locations{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1em;
+
+} 
+
+.locations h2{
+    color: var(--red);
+    margin-bottom: .8em;
+}
+
+address{
+    color: var(--white);
+}
+
+.locations div{
+    flex: 1;
+    min-width: 140px;
+}
+
+/*  css for footer */
+
+footer{
+    background-color: rgb(55, 55, 55);
+    color:var(--white);
+    padding:.25em 1em;
+}
+
+#copyright{
+    margin-left:20px;
+}
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 25px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
+}
+
